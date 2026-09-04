@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_1298cb9c2b7b5c7ebb33c07a04a1efab {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_1298cb9c2b7b5c7ebb33c07a04a1efab" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_1298cb9c2b7b5c7ebb33c07a04a1efab = L.map(
+                "map_1298cb9c2b7b5c7ebb33c07a04a1efab",
+                {
+                    center: [36.2048, 138.2529],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 6,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_5e04e3d0aff4b9182c7271fc62686afd = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_5e04e3d0aff4b9182c7271fc62686afd.addTo(map_1298cb9c2b7b5c7ebb33c07a04a1efab);
+        
+    
+            var circle_marker_7ea7c7772976a3767a924234eff69f31 = L.circleMarker(
+                [35.6762, 139.6503],
+                {"bubblingMouseEvents": true, "color": "#2ca02c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ca02c", "fillOpacity": 0.55, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 27.0, "stroke": true, "weight": 3}
+            ).addTo(map_1298cb9c2b7b5c7ebb33c07a04a1efab);
+        
+    
+        var popup_6f09bf528ca2b5441d207d34c7d1632e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d1c4578e58724193625827abee6adec4 = $(`<div id="html_d1c4578e58724193625827abee6adec4" style="width: 100.0%; height: 100.0%;"><b>Tokyo</b><br>Spot Count: 54</div>`)[0];
+                popup_6f09bf528ca2b5441d207d34c7d1632e.setContent(html_d1c4578e58724193625827abee6adec4);
+            
+        
+
+        circle_marker_7ea7c7772976a3767a924234eff69f31.bindPopup(popup_6f09bf528ca2b5441d207d34c7d1632e)
+        ;
+
+        
+    
+    
+            var marker_9f651820877bf793282f47a0242945df = L.marker(
+                [35.6762, 139.6503],
+                {
+}
+            ).addTo(map_1298cb9c2b7b5c7ebb33c07a04a1efab);
+        
+    
+            var div_icon_7abd6f0a686fbdc438bc38ec84d68447 = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                font-size: 9pt; \n                font-weight: bold; \n                color: #111; \n                background-color: rgba(255, 255, 255, 0.9); \n                border: 1px solid #444; \n                border-radius: 4px; \n                padding: 1px 4px; \n                box-shadow: 1px 1px 3px rgba(0,0,0,0.2);\n                white-space: nowrap;\n            \"\u003e\n                54\n            \u003c/div\u003e\n            ",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+  "className": "empty",
+});
+        
+    
+                marker_9f651820877bf793282f47a0242945df.setIcon(div_icon_7abd6f0a686fbdc438bc38ec84d68447);
+            
+    
+            var circle_marker_764c551e843080ad6a310fd766363c86 = L.circleMarker(
+                [35.0116, 135.7681],
+                {"bubblingMouseEvents": true, "color": "#2ca02c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ca02c", "fillOpacity": 0.55, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 25.5, "stroke": true, "weight": 3}
+            ).addTo(map_1298cb9c2b7b5c7ebb33c07a04a1efab);
+        
+    
+        var popup_ad242df42a158f1ecbd6b276e026e08a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_77a6d54e5d569700e5a7c224ae7b783b = $(`<div id="html_77a6d54e5d569700e5a7c224ae7b783b" style="width: 100.0%; height: 100.0%;"><b>Kyoto</b><br>Spot Count: 51</div>`)[0];
+                popup_ad242df42a158f1ecbd6b276e026e08a.setContent(html_77a6d54e5d569700e5a7c224ae7b783b);
+            
+        
+
+        circle_marker_764c551e843080ad6a310fd766363c86.bindPopup(popup_ad242df42a158f1ecbd6b276e026e08a)
+        ;
+
+        
+    
+    
+            var marker_521907a686cbad99d02206498e16393d = L.marker(
+                [35.0116, 135.7681],
+                {
+}
+            ).addTo(map_1298cb9c2b7b5c7ebb33c07a04a1efab);
+        
+    
+            var div_icon_7e74be9b8a13cb75fa48f038fb2e6554 = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                font-size: 9pt; \n                font-weight: bold; \n                color: #111; \n                background-color: rgba(255, 255, 255, 0.9); \n                border: 1px solid #444; \n                border-radius: 4px; \n                padding: 1px 4px; \n                box-shadow: 1px 1px 3px rgba(0,0,0,0.2);\n                white-space: nowrap;\n            \"\u003e\n                51\n            \u003c/div\u003e\n            ",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+  "className": "empty",
+});
+        
+    
+                marker_521907a686cbad99d02206498e16393d.setIcon(div_icon_7e74be9b8a13cb75fa48f038fb2e6554);
+            
+    
+            var circle_marker_172ff313c9d81ef7b5ad497a87e88d43 = L.circleMarker(
+                [35.8617, 139.6453],
+                {"bubblingMouseEvents": true, "color": "#2ca02c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ca02c", "fillOpacity": 0.55, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 22.5, "stroke": true, "weight": 3}
+            ).addTo(map_1298cb9c2b7b5c7ebb33c07a04a1efab);
+        
+    
+        var popup_205e2c3c55985dfc0fe4eb2a74da9492 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bc2269ffb483e4792af2f11d364d516c = $(`<div id="html_bc2269ffb483e4792af2f11d364d516c" style="width: 100.0%; height: 100.0%;"><b>Saitama</b><br>Spot Count: 45</div>`)[0];
+                popup_205e2c3c55985dfc0fe4eb2a74da9492.setContent(html_bc2269ffb483e4792af2f11d364d516c);
+            
+        
+
+        circle_marker_172ff313c9d81ef7b5ad497a87e88d43.bindPopup(popup_205e2c3c55985dfc0fe4eb2a74da9492)
+        ;
+
+        
+    
+    
+            var marker_080241016b2da1861d1f82f784f65341 = L.marker(
+                [35.8617, 139.6453],
+                {
+}
+            ).addTo(map_1298cb9c2b7b5c7ebb33c07a04a1efab);
+        
+    
+            var div_icon_ec803ce418e16d71c9c36bdca2232688 = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                font-size: 9pt; \n                font-weight: bold; \n                color: #111; \n                background-color: rgba(255, 255, 255, 0.9); \n                border: 1px solid #444; \n                border-radius: 4px; \n                padding: 1px 4px; \n                box-shadow: 1px 1px 3px rgba(0,0,0,0.2);\n                white-space: nowrap;\n            \"\u003e\n                45\n            \u003c/div\u003e\n            ",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+  "className": "empty",
+});
+        
+    
+                marker_080241016b2da1861d1f82f784f65341.setIcon(div_icon_ec803ce418e16d71c9c36bdca2232688);
+            
+    
+            var circle_marker_9068322c997a458d26e17105d6f17f5c = L.circleMarker(
+                [37.7503, 140.4676],
+                {"bubblingMouseEvents": true, "color": "#2ca02c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ca02c", "fillOpacity": 0.55, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20.5, "stroke": true, "weight": 3}
+            ).addTo(map_1298cb9c2b7b5c7ebb33c07a04a1efab);
+        
+    
+        var popup_4a9ab77ed66f767a426f47c302514382 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e32b3ef7601dbe68e8b4c7db61dfdf52 = $(`<div id="html_e32b3ef7601dbe68e8b4c7db61dfdf52" style="width: 100.0%; height: 100.0%;"><b>Fukushima</b><br>Spot Count: 41</div>`)[0];
+                popup_4a9ab77ed66f767a426f47c302514382.setContent(html_e32b3ef7601dbe68e8b4c7db61dfdf52);
+            
+        
+
+        circle_marker_9068322c997a458d26e17105d6f17f5c.bindPopup(popup_4a9ab77ed66f767a426f47c302514382)
+        ;
+
+        
+    
+    
+            var marker_2f1263615373a16ca05b93950e65fe24 = L.marker(
+                [37.7503, 140.4676],
+                {
+}
+            ).addTo(map_1298cb9c2b7b5c7ebb33c07a04a1efab);
+        
+    
+            var div_icon_00022a8569f6a4ac7e9f877ed0dc538b = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                font-size: 9pt; \n                font-weight: bold; \n                color: #111; \n                background-color: rgba(255, 255, 255, 0.9); \n                border: 1px solid #444; \n                border-radius: 4px; \n                padding: 1px 4px; \n                box-shadow: 1px 1px 3px rgba(0,0,0,0.2);\n                white-space: nowrap;\n            \"\u003e\n                41\n            \u003c/div\u003e\n            ",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+  "className": "empty",
+});
+        
+    
+                marker_2f1263615373a16ca05b93950e65fe24.setIcon(div_icon_00022a8569f6a4ac7e9f877ed0dc538b);
+            
+    
+            var circle_marker_96e3640a05b2e4578ea16b066232ca85 = L.circleMarker(
+                [34.9756, 138.3828],
+                {"bubblingMouseEvents": true, "color": "#2ca02c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ca02c", "fillOpacity": 0.55, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.5, "stroke": true, "weight": 3}
+            ).addTo(map_1298cb9c2b7b5c7ebb33c07a04a1efab);
+        
+    
+        var popup_e1d82a8fcfe1d56fb680bcbfeae1111f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1bd32382f7566c2e7f9b556defc650cf = $(`<div id="html_1bd32382f7566c2e7f9b556defc650cf" style="width: 100.0%; height: 100.0%;"><b>Shizuoka</b><br>Spot Count: 35</div>`)[0];
+                popup_e1d82a8fcfe1d56fb680bcbfeae1111f.setContent(html_1bd32382f7566c2e7f9b556defc650cf);
+            
+        
+
+        circle_marker_96e3640a05b2e4578ea16b066232ca85.bindPopup(popup_e1d82a8fcfe1d56fb680bcbfeae1111f)
+        ;
+
+        
+    
+    
+            var marker_5859ba16dd22eb9ee463ae6c9d0ae65e = L.marker(
+                [34.9756, 138.3828],
+                {
+}
+            ).addTo(map_1298cb9c2b7b5c7ebb33c07a04a1efab);
+        
+    
+            var div_icon_c204603101e02cf1af7c0969228b2cd1 = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                font-size: 9pt; \n                font-weight: bold; \n                color: #111; \n                background-color: rgba(255, 255, 255, 0.9); \n                border: 1px solid #444; \n                border-radius: 4px; \n                padding: 1px 4px; \n                box-shadow: 1px 1px 3px rgba(0,0,0,0.2);\n                white-space: nowrap;\n            \"\u003e\n                35\n            \u003c/div\u003e\n            ",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+  "className": "empty",
+});
+        
+    
+                marker_5859ba16dd22eb9ee463ae6c9d0ae65e.setIcon(div_icon_c204603101e02cf1af7c0969228b2cd1);
+            
+    
+            var circle_marker_f7f571948f0924366cf5ad9bc4488e4c = L.circleMarker(
+                [34.6913, 135.183],
+                {"bubblingMouseEvents": true, "color": "#2ca02c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ca02c", "fillOpacity": 0.55, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.5, "stroke": true, "weight": 3}
+            ).addTo(map_1298cb9c2b7b5c7ebb33c07a04a1efab);
+        
+    
+        var popup_fb41e3fe75f21ae3aaa8efc1dec6f691 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_80feac9250ccf414a06e85309b2c97dc = $(`<div id="html_80feac9250ccf414a06e85309b2c97dc" style="width: 100.0%; height: 100.0%;"><b>Hyogo</b><br>Spot Count: 31</div>`)[0];
+                popup_fb41e3fe75f21ae3aaa8efc1dec6f691.setContent(html_80feac9250ccf414a06e85309b2c97dc);
+            
+        
+
+        circle_marker_f7f571948f0924366cf5ad9bc4488e4c.bindPopup(popup_fb41e3fe75f21ae3aaa8efc1dec6f691)
+        ;
+
+        
+    
+    
+            var marker_1785a6f9dec35e27e897a3ffacc062a2 = L.marker(
+                [34.6913, 135.183],
+                {
+}
+            ).addTo(map_1298cb9c2b7b5c7ebb33c07a04a1efab);
+        
+    
+            var div_icon_b8b77d71f5899c4762713b48bccf77f3 = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                font-size: 9pt; \n                font-weight: bold; \n                color: #111; \n                background-color: rgba(255, 255, 255, 0.9); \n                border: 1px solid #444; \n                border-radius: 4px; \n                padding: 1px 4px; \n                box-shadow: 1px 1px 3px rgba(0,0,0,0.2);\n                white-space: nowrap;\n            \"\u003e\n                31\n            \u003c/div\u003e\n            ",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+  "className": "empty",
+});
+        
+    
+                marker_1785a6f9dec35e27e897a3ffacc062a2.setIcon(div_icon_b8b77d71f5899c4762713b48bccf77f3);
+            
+    
+            var circle_marker_0137da19c1c4c69d5e71c05fb21b0d3a = L.circleMarker(
+                [36.6513, 138.1812],
+                {"bubblingMouseEvents": true, "color": "#2ca02c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ca02c", "fillOpacity": 0.55, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.0, "stroke": true, "weight": 3}
+            ).addTo(map_1298cb9c2b7b5c7ebb33c07a04a1efab);
+        
+    
+        var popup_a748a71f676be94813a22952c16514ce = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_917405b262ccba29f0f83124baa3c195 = $(`<div id="html_917405b262ccba29f0f83124baa3c195" style="width: 100.0%; height: 100.0%;"><b>Nagano</b><br>Spot Count: 30</div>`)[0];
+                popup_a748a71f676be94813a22952c16514ce.setContent(html_917405b262ccba29f0f83124baa3c195);
+            
+        
+
+        circle_marker_0137da19c1c4c69d5e71c05fb21b0d3a.bindPopup(popup_a748a71f676be94813a22952c16514ce)
+        ;
+
+        
+    
+    
+            var marker_228b9aefdcd8408c04878286ae8ebbc2 = L.marker(
+                [36.6513, 138.1812],
+                {
+}
+            ).addTo(map_1298cb9c2b7b5c7ebb33c07a04a1efab);
+        
+    
+            var div_icon_0359fc4ce820f11915f828f19f1a372a = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                font-size: 9pt; \n                font-weight: bold; \n                color: #111; \n                background-color: rgba(255, 255, 255, 0.9); \n                border: 1px solid #444; \n                border-radius: 4px; \n                padding: 1px 4px; \n                box-shadow: 1px 1px 3px rgba(0,0,0,0.2);\n                white-space: nowrap;\n            \"\u003e\n                30\n            \u003c/div\u003e\n            ",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+  "className": "empty",
+});
+        
+    
+                marker_228b9aefdcd8408c04878286ae8ebbc2.setIcon(div_icon_0359fc4ce820f11915f828f19f1a372a);
+            
+    
+            var circle_marker_791a24584c6e935322cb2eae6293962b = L.circleMarker(
+                [34.1782, 131.4738],
+                {"bubblingMouseEvents": true, "color": "#2ca02c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ca02c", "fillOpacity": 0.55, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.0, "stroke": true, "weight": 3}
+            ).addTo(map_1298cb9c2b7b5c7ebb33c07a04a1efab);
+        
+    
+        var popup_97f026cac158ac7045885906c29a0b2e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_822e2ceab0fea201ff5426ea263395f5 = $(`<div id="html_822e2ceab0fea201ff5426ea263395f5" style="width: 100.0%; height: 100.0%;"><b>Yamaguchi</b><br>Spot Count: 30</div>`)[0];
+                popup_97f026cac158ac7045885906c29a0b2e.setContent(html_822e2ceab0fea201ff5426ea263395f5);
+            
+        
+
+        circle_marker_791a24584c6e935322cb2eae6293962b.bindPopup(popup_97f026cac158ac7045885906c29a0b2e)
+        ;
+
+        
+    
+    
+            var marker_1cde1be3d01afad2b2fb71dc67758bf6 = L.marker(
+                [34.1782, 131.4738],
+                {
+}
+            ).addTo(map_1298cb9c2b7b5c7ebb33c07a04a1efab);
+        
+    
+            var div_icon_39b4b2ee8c4784909d9a48aaead52f9c = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                font-size: 9pt; \n                font-weight: bold; \n                color: #111; \n                background-color: rgba(255, 255, 255, 0.9); \n                border: 1px solid #444; \n                border-radius: 4px; \n                padding: 1px 4px; \n                box-shadow: 1px 1px 3px rgba(0,0,0,0.2);\n                white-space: nowrap;\n            \"\u003e\n                30\n            \u003c/div\u003e\n            ",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+  "className": "empty",
+});
+        
+    
+                marker_1cde1be3d01afad2b2fb71dc67758bf6.setIcon(div_icon_39b4b2ee8c4784909d9a48aaead52f9c);
+            
+    
+            var circle_marker_5e3921e6f44556c38ef417d625847c81 = L.circleMarker(
+                [33.6064, 130.418],
+                {"bubblingMouseEvents": true, "color": "#2ca02c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ca02c", "fillOpacity": 0.55, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.0, "stroke": true, "weight": 3}
+            ).addTo(map_1298cb9c2b7b5c7ebb33c07a04a1efab);
+        
+    
+        var popup_992e0d49d36eb3a4f8585c1457dafd96 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b3980595621badb495c9fa0968585774 = $(`<div id="html_b3980595621badb495c9fa0968585774" style="width: 100.0%; height: 100.0%;"><b>Fukuoka</b><br>Spot Count: 28</div>`)[0];
+                popup_992e0d49d36eb3a4f8585c1457dafd96.setContent(html_b3980595621badb495c9fa0968585774);
+            
+        
+
+        circle_marker_5e3921e6f44556c38ef417d625847c81.bindPopup(popup_992e0d49d36eb3a4f8585c1457dafd96)
+        ;
+
+        
+    
+    
+            var marker_ed61f79e26ea7ec5c0a9f5ee12df36e7 = L.marker(
+                [33.6064, 130.418],
+                {
+}
+            ).addTo(map_1298cb9c2b7b5c7ebb33c07a04a1efab);
+        
+    
+            var div_icon_d39b24b36fb2b40bad854157a777bc7b = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                font-size: 9pt; \n                font-weight: bold; \n                color: #111; \n                background-color: rgba(255, 255, 255, 0.9); \n                border: 1px solid #444; \n                border-radius: 4px; \n                padding: 1px 4px; \n                box-shadow: 1px 1px 3px rgba(0,0,0,0.2);\n                white-space: nowrap;\n            \"\u003e\n                28\n            \u003c/div\u003e\n            ",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+  "className": "empty",
+});
+        
+    
+                marker_ed61f79e26ea7ec5c0a9f5ee12df36e7.setIcon(div_icon_d39b24b36fb2b40bad854157a777bc7b);
+            
+    
+            var circle_marker_37003d95b2a66b5ac00c2f99d7db5c99 = L.circleMarker(
+                [34.6551, 133.9197],
+                {"bubblingMouseEvents": true, "color": "#2ca02c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ca02c", "fillOpacity": 0.55, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.0, "stroke": true, "weight": 3}
+            ).addTo(map_1298cb9c2b7b5c7ebb33c07a04a1efab);
+        
+    
+        var popup_03f802c73c9f594d84b93afd164adc76 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a9a9c0d87b01d5f10555396ef063a369 = $(`<div id="html_a9a9c0d87b01d5f10555396ef063a369" style="width: 100.0%; height: 100.0%;"><b>Okayama</b><br>Spot Count: 28</div>`)[0];
+                popup_03f802c73c9f594d84b93afd164adc76.setContent(html_a9a9c0d87b01d5f10555396ef063a369);
+            
+        
+
+        circle_marker_37003d95b2a66b5ac00c2f99d7db5c99.bindPopup(popup_03f802c73c9f594d84b93afd164adc76)
+        ;
+
+        
+    
+    
+            var marker_55d9ec0be107786a908b7ea5891c7f7a = L.marker(
+                [34.6551, 133.9197],
+                {
+}
+            ).addTo(map_1298cb9c2b7b5c7ebb33c07a04a1efab);
+        
+    
+            var div_icon_6f9c80bb23183424238e371f5bbb7d7b = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                font-size: 9pt; \n                font-weight: bold; \n                color: #111; \n                background-color: rgba(255, 255, 255, 0.9); \n                border: 1px solid #444; \n                border-radius: 4px; \n                padding: 1px 4px; \n                box-shadow: 1px 1px 3px rgba(0,0,0,0.2);\n                white-space: nowrap;\n            \"\u003e\n                28\n            \u003c/div\u003e\n            ",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+  "className": "empty",
+});
+        
+    
+                marker_55d9ec0be107786a908b7ea5891c7f7a.setIcon(div_icon_6f9c80bb23183424238e371f5bbb7d7b);
+            
+</script>
+</html>
